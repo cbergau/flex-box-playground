@@ -19,6 +19,8 @@
         .container {
             display: flex;
             flex-direction: row;
+            height: 100px;
+            align-items: stretch;
         }
 
         div > div {
@@ -26,26 +28,38 @@
             border: 1px solid black;
             margin: 5px;
             padding: 5px;
-            width: 200px;
         }
 
-        .container_wrap {
-            flex-wrap: wrap;
+        .align_stretch {
+            align-items: stretch;
         }
 
-        .container_wrap_reverse {
-            flex-wrap: wrap-reverse;
+        .align_flex_start {
+            align-items: flex-start;
         }
+
+        .align_flex_end {
+            align-items: flex-end;
+        }
+
+        .align_center {
+            align-items: center;
+        }
+
+        .align_baseline {
+            align-items: baseline;
+        }
+
     </style>
 </head>
 <body>
 <h1>Flex Boxes</h1>
 
-<h2>Flex Wrap</h2>
+<h2>Align Items</h2>
 
 <article>
-    <h3>flex-wrap: nowrap</h3>
-    <div class="container container_nowrap">
+    <h3>align-items: stretch</h3>
+    <div class="container align_stretch">
         <div>First</div>
         <div>Second</div>
         <div>Third</div>
@@ -53,20 +67,35 @@
 </article>
 
 <article>
-    <h3>flex-wrap: wrap</h3>
-    <div class="container container_wrap">
+    <h3>align-items: flex-start</h3>
+    <div class="container align_flex_start">
         <div>First</div>
         <div>Second</div>
         <div>Third</div>
     </div>
 </article>
-
 <article>
-    <h3>flex-wrap: wrap-reverse</h3>
-    <div class="container container_wrap_reverse">
+    <h3>align-items: flex-end</h3>
+    <div class="container align_flex_end">
         <div>First</div>
         <div>Second</div>
         <div>Third</div>
+    </div>
+</article>
+<article>
+    <h3>align-items: center</h3>
+    <div class="container align_center">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+</article>
+<article>
+    <h3>align-items: baseline</h3>
+    <div class="container align_baseline">
+        <div style="height: 40px;">First</div>
+        <div style="height: 30px;">Second</div>
+        <div style="height: 50px;">Third</div>
     </div>
 </article>
 
