@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex Box - Wrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        article {
+            border-bottom: 1px solid #dedede;
+            padding-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        div > div {
+            background-color: rgb(246, 255, 150);
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+            width: 100px;
+        }
+
+        /* Default */
+        .justify_start {
+            justify-content: flex-start;
+        }
+
+        .justify_end {
+            justify-content: flex-end;
+        }
+
+        .justify_center {
+            justify-content: center;
+        }
+
+        .justify_space_between {
+            justify-content: space-between;
+        }
+
+        .justify_space_around {
+            justify-content: space-around;
+        }
+
+        .justify_space_evenly {
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+<h1>Flex Boxes</h1>
+
+<h2>Justify Content</h2>
+
+<article>
+    <h3>justify-content: flex-start</h3>
+    <div class="container justify_start">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+</article>
+
+<article>
+    <h3>justify-content: flex-end</h3>
+    <div class="container justify_end">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+</article>
+
+<article>
+    <h3>justify-content: center</h3>
+    <div class="container justify_center">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+</article>
+
+<article>
+    <h3>justify-content: space-between</h3>
+    <div class="container justify_space_between">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+</article>
+
+<article>
+    <h3>justify-content: space-around</h3>
+    <div class="container justify_space_around">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+</article>
+
+<article>
+    <h3>justify-content: space-evenly</h3>
+    <div class="container justify_space_evenly">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+</article>
+
+
+</body>
+</html>

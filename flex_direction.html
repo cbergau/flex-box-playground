@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex Box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        article {
+            border-bottom: 1px solid #dedede;
+            padding-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container_column_reverse {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .container_row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container_row_reverse {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        div > div {
+            background-color: rgb(246, 255, 150);
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Flex Boxes</h1>
+
+<h2>Flex Direction</h2>
+
+<article>
+    <h3>flex-direction: column</h3>
+    <div class="container_column">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+</article>
+
+<article>
+    <h3>flex-direction: column-reverse</h3>
+    <div class="container_column_reverse">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+</article>
+
+<article>
+    <h3>flex-direction: row</h3>
+    <div class="container_row">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+</article>
+
+<article>
+    <h3>flex-direction: row-reverse</h3>
+    <div class="container_row_reverse">
+        <div>First</div>
+        <div>Second</div>
+        <div>Third</div>
+    </div>
+</article>
+
+</body>
+</html>
